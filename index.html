@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Áreas</title>
+    <link rel="stylesheet" href="CSS/Estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1><b>Cálculo de Áreas de Figuras</b></h1>
+        <div class="form-group">
+            <label for="figura">Seleccione una figura:</label>
+            <select id="figura">
+                <option value="circulo">Círculo</option>
+                <option value="cuadrado">Cuadrado</option>
+                <option value="triangulo">Triángulo</option>
+            </select>
+            <button id="seleccionar" class="btn" onclick="mostrarInputs()">Seleccionar</button>
+        </div>
+        <div id="figure-container" class="figure-container">
+        </div>
+        <button id="calcular" class="btn calcular-btn" style="display: none;" onclick="calcularArea()">Calcular</button>
+        <p id="resultado"><b>Resultados</b></p>
+    </div>
+    <script src="JS/funcion.js"></script>
+</body>
+</html>
